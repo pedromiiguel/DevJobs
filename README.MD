@@ -23,18 +23,7 @@ O Dev Jobs é uma aplicação web feito para ajudar desenvolvedores a encontrare
 
 ------------
 
-![Imgur](https://i.imgur.com/zHZ1vkn.png)
-
-
 ------------
-
-![Imgur](https://imgur.com/lr4Fhyt.png)
-
-
-------------
-
-![Imgur](https://imgur.com/8IrP8zw.png)
-
 ## :tw-1f4f1: Resultado Mobile
 
 ![Imgur](https://imgur.com/SCjfbB2.png)
@@ -42,19 +31,7 @@ O Dev Jobs é uma aplicação web feito para ajudar desenvolvedores a encontrare
 ------------
 
 ![Imgur](https://imgur.com/dLj9H1r.png)
-
-
 ------------
-
-![Imgur](https://imgur.com/ikHKpJB.png)
-
-
-------------
-
-![Imgur](https://imgur.com/JolwRqP.png)
-
-
-
 ## :tw-1f529: Como usar
 ### Pré-requisitos
 - É necessário possuir o [Node.js](https://nodejs.org/en/) instalado na máquina
