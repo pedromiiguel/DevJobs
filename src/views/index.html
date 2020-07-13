@@ -1,0 +1,128 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="/styles/index.css">
+{% endblock styles %}
+
+{% block nav %}
+<header>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light ">
+        <a class="navbar-brand" href="/"><img class="ml-4" src="/assets/favicon.svg" width="50" height="50"
+                alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#jobs">Últimas vagas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/create-jobs">Adicionar vagas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+{% endblock nav %}
+
+{% block content %}
+<div class="container-fluid" id="top-container">
+    <h1 class="main-title">Encontre o emprego dos seus sonhos</h1>
+    <p class="main-subtitle">Somos o site com mais vagas de tecnologias do mercado, direcionadas a home office.</p>
+
+    <form action="" id="search-form" class="form-inline">
+        <div class="form-group col-md-10">
+            <input type="text" name="job" id="job" class="form-control" placeholder="Digite a vaga que está procurando">
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn">
+                <i class="fas fa-search "></i>
+            </button>
+        </div>
+    </form>
+</div>
+<main>
+    <div class="container" id="job-container">
+        <div class="row">
+            <div class="col-md-12">
+                {% if search  %}
+                <h2 class="job-list-title" id='jobs'>Buscando vagas que contém: {{search}}</h2>
+
+                {%else%}
+                <h2 class="job-list-title" id='jobs'>Veja nossas vagas em destaque</h2>
+                {% endif %}
+
+                {% if total > 0 %}
+                <p class="job-list-description">Últimas vagas cadastadas.</p>
+                <ul id="job-list" class="list-group">
+                    {% for job in jobs %}
+                    <li class="list-group-item">
+                        <img src="{{job.image}}" alt="{{job.company}}">
+                        <p>
+                            <i class="far fa-building mr-1"></i>{{job.company}}</p>
+                        <h2>{{job.title}}</h2>
+                        <span id="state-info">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            </i>{{job.state}}</span>
+                        <a href="/views/jobs/{{job.id}}" class="btn">Ver vaga</a>
+                    </li>
+
+                    {% endfor %}
+
+                </ul>
+
+                {%else%}
+                <p class="job-list-description">Nenhuma vaga encontrada.</p>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock content %}
+{% block footer %}
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12" id="footer-div">
+                <div class="text-center">Ícones feitos por
+                    <a href="https://www.flaticon.com/br/autores/eucalyp" title="Eucalyp">Eucalyp</a>
+                    from
+                    <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12" id="footer-div-two">
+
+                <span class="icons text-center">
+                    <a href="https://www.google.com/" target='_blanck'>
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </span>
+                <span class="icons text-center">
+                    <a href="https://www.linkedin.com/in/pedro-miiguel" target='_blanck'>
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </span>
+                <span class="icons text-center">
+                    <a href="https://github.com/pedromiiguel" target='_blanck'>
+                        <i class="fab fa-github"></i>
+                    </a>
+                </span>
+                <span class="icons text-center">
+                    <a href="#" target='_blanck'>
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center" id="footer-two">Desenvolvido por <a href="#">Pedro Miguel</a>.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock footer %}

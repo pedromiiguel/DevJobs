@@ -1,0 +1,36 @@
+:root {
+    --preto: #212529;
+    --primary-color: #b3e5fc;
+    --secondary-color: #4fc3f7;
+    --link-hover:#616161;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer{
+    border-top: 1px solid var(--secondary-color);
+    padding-top:10px ;
+    background-color: var(--primary-color);
+
+}

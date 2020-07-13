@@ -1,0 +1,112 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/create-jobs.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+
+{% endblock styles %}
+
+{% block title %}
+    <title>Adicionar vagas</title>
+{% endblock title %}
+
+{% block nav %}
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a href="/" class="navbar-brand"><img class="ml-4 mr-2" src="/assets/favicon.svg" width="40" height="40" alt="Logo">
+                Dev Jobs
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">
+                            <img src="/assets/arrow-left.svg" alt="Seta" id="arrow">
+                            Voltar para home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+{% endblock nav %}
+
+{% block content %}
+    <div class="container" id="add-form-container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Divulgue a vaga preenchendo o formulário</h1>
+            </div>
+            <div class="col-md-12" id="form-box">
+                <h2>Preencha os dados da melhor forma possível para encontrar mais rápido seu dev!</h2>
+
+                <form action="/savejob" method="POST">
+                    <div class="form-group">
+                        <label for="title">Título:</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Digite o título da vaga" required="required">
+                        {# <small id="titlehelp" class="form-text text-muted">O título é muito importante, seja claro e objetivo.</small> #}
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descrição:</label>
+                        <textarea type="text" class="form-control" id="description" name="description" required="required" placeholder="Digite a descrição da vaga"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Empresa:</label>
+                        <input type="text" class="form-control" id="company" name="company" placeholder="Digite a empresa" required="required">
+                    </div>
+                    <div class="field-group form-group">
+                        <div class="field">
+                            <label for="state">Estado:</label>
+                            <select name="uf" class="form-control" required>
+                                <option value="">Selecione o Estado</option>
+
+                            </select>
+
+                            <input type="hidden" name="state">
+                        </div>
+
+                        <div class="field form-group">
+
+
+                            <label for="city">Cidade:</label>
+                            <select name="city" class="form-control" disabled="disabled" required="required">
+                                <option value="">Selecione a Cidade</option>
+                            </select>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Logo da empresa:
+                        </label>
+                        <input type="url" class="form-control" id="image" name="image" placeholder="https://" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite o email para contato" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="salary">Salário:
+                        </label>
+                        <input type="text" class="form-control" id="salary" name="salary" placeholder="Digite o salário da vaga" required>
+                    </div>
+                    <div class="flex">
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+{% endblock content %}
+
+{% block modal %}
+     {% if saved %}
+        {%include "partials/job-created.html"%}
+    {% endif %}
+{% endblock modal %}
+
+
+{% block scripts %}
+    <script src="/scripts/created-point.js"></script>
+{% endblock scripts %}

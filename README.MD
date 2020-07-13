@@ -6,7 +6,7 @@
 
 ## :tw-1f4dd: Sobre
 
-O Dev Hub é uma aplicação web feito para ajudar desenvolvedores a encontrarem vagas de emprego.
+O Dev Jobs é uma aplicação web feito para ajudar desenvolvedores a encontrarem vagas de emprego.
 
 ## :tw-1f680: Tecnologias utilizadas
 - [Bootstrap](https://getbootstrap.com.br/)
@@ -54,10 +54,6 @@ O Dev Hub é uma aplicação web feito para ajudar desenvolvedores a encontrarem
 ![Imgur](https://imgur.com/JolwRqP.png)
 
 
-## :tw-1f529: Como usar
-### Pré-requisitos
-- É necessário possuir o [Node.js](https://nodejs.org/en/) instalado na máquina
-- E também possuir um gerenciador de tarefas [NPM](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/).
 
 ## :tw-1f529: Como usar
 ### Pré-requisitos

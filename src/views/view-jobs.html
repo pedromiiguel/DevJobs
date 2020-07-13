@@ -1,0 +1,79 @@
+{% extends 'layout.html' %}
+
+
+{% block styles %}
+<link rel="stylesheet" href="/styles/view-jobs.css">
+{% endblock styles %}
+
+{% block title %}
+<title>Visualizar a vaga</title>
+{% endblock title %}
+
+{% block nav %}
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="/" class="navbar-brand"><img class="ml-4 mr-2" src="/assets/favicon.svg" width="40" height="40"
+                alt="Logo">
+            Dev Jobs
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a href="/" class="nav-link">
+                        <img src="/assets/arrow-left.svg" alt="Seta" id="arrow">
+                        Voltar para home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+{% endblock nav %}
+
+{% block content %}
+{% for job in jobs %}
+
+<div class='container' id='job-view-container'>
+    <div class='row'>
+        <div id='img-fluid' class='col-lg-4 col-md-6 col-sm-12 '>
+            <img src="{{job.image}}" alt="{{job.company}}">
+
+        </div>
+
+        <div class='col-md-6 col-lg-8 col-sm-12' id='column-two'>
+            <h1>{{job.title}}</h1>
+
+            <span class='jobs-info'>
+                <i class="fas fa-map-marker-alt"></i>
+                {{job.city}}
+            </span>
+            <span class='jobs-info'>
+                <i class="fas fa-money-bill-alt"></i>
+                R${{job.salary}},00
+            </span>
+            <span class='jobs-info'>
+                <i class="fas fa-building "></i>
+                {{job.company}}
+            </span>
+
+            <p class='bold'>Requisitos:</p>
+            <div id='job-desc'>
+                {{job.description}}
+            </div>
+
+            <p id='job-email'>Para se candidatar à vaga envie um e-mail para <a class='bold'
+                    href="mailto:">{{job.email}}</a></p>
+
+        </div>
+
+    </div>
+</div>
+
+
+{% endfor %}
+
+{% endblock content %}
