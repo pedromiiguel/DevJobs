@@ -9,7 +9,7 @@
 
 O Dev Jobs é uma aplicação web feito para ajudar desenvolvedores a encontrarem vagas de emprego.
 
-## :bookmark: Tecnologias utilizadas
+## :rocket: Tecnologias utilizadas
 - [Bootstrap](https://getbootstrap.com.br/)
 - [Node.js](https://nodejs.org/en/)
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
