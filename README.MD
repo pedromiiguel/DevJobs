@@ -55,5 +55,5 @@ O Dev Jobs é uma aplicação web feito para ajudar desenvolvedores a encontrare
 
 #### Pedro Miguel
 
-- Git Hub: <a href="https://github.com/pedromiiguel" >@pedromiiguel</a>
-- Linkedin: <a href="https://www.linkedin.com/in/pedro-miiguel" >@pedromiiguel</a>
+- Git Hub: <a href="https://github.com/pedromiiguel" target='_blanck' >@pedromiiguel</a>
+- Linkedin: <a href="https://www.linkedin.com/in/pedro-miiguel" target='_blanck' >@pedromiiguel</a>
