@@ -1,8 +1,8 @@
 # Índice
-- Sobre
-- Tecnologias utilizadas
-- Resultado
-- Como utilizar
+- [Sobre](#bookmark-sobre)
+- [Tecnologias utilizadas](#rocket-tecnologias-utilizadas)
+- [Resultado](#computer-resultado-web)
+- [Como utilizar](#wrench-como-usar)
 
 
 ## :bookmark: Sobre
@@ -18,14 +18,14 @@ O Dev Jobs é uma aplicação web feito para ajudar desenvolvedores a encontrare
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
-## :computer: Resultado Web
+## :computer: Resultado web
 
 ![Imgur](https://i.imgur.com/qdjbbo3.png)
 
 ------------
 
 
-## :iphone: Resultado Mobile
+## :iphone: Resultado mobile
 
 ![Imgur](https://imgur.com/SCjfbB2.png)
 
@@ -50,3 +50,10 @@ O Dev Jobs é uma aplicação web feito para ajudar desenvolvedores a encontrare
 4. Acesse a aplicação no seu navegador:
 `(http://localhost:3000/)`
 ------------
+
+## :man_astronaut: Autor
+
+#### Pedro Miguel
+
+- Git Hub: <a href="https://github.com/pedromiiguel" >@pedromiiguel</a>
+- Linkedin: <a href="https://www.linkedin.com/in/pedro-miiguel" >@pedromiiguel</a>
