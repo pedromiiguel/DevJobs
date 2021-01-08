@@ -28,8 +28,8 @@
 </p>
 
 <h1 align="center">
-    <img alt="Ecoleta" title="Ecoleta" src=".github/smartphone.png" width="25%" height="450px"/>
-    <img alt="Ecoleta" title="Ecoleta" src=".github/fullscreen.png" width="70%" height="450px"/>
+    <img alt="Ecoleta" title="Ecoleta" src=".github/smartphone.png" width="25%" height="430px"/>
+    <img alt="Ecoleta" title="Ecoleta" src=".github/fullscreen.png" width="60%" height="430px"/>
 </h1>
 
 
