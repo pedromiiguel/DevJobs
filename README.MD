@@ -21,15 +21,13 @@
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/pedromiiguel/DevJobs">
   </a>
 
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-   <a href="https://github.com/pedromiiguel/DevJobs/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/pedromiiguel/DevJobs?style=social">
-  </a>
+<img alt="license" src="https://img.shields.io/github/license/pedromiiguel/DevJobs">
+  
 </p>
 
 <h1 align="center">
-    <img alt="Ecoleta" title="Ecoleta" src=".github/smartphone.png" width="25%" height="430px"/>
-    <img alt="Ecoleta" title="Ecoleta" src=".github/fullscreeen.png" width="60%" height="430px"/>
+    <img alt="DevJobs" title="DevJobs" src=".github/smartphone.png" width="25%" height="430px"/>
+    <img alt="DevJobs" title="DevJobs" src=".github/fullscreeen.png" width="60%" height="430px"/>
 </h1>
 
 
